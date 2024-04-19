@@ -65,7 +65,7 @@ public class LocatorsExperiments {
         System.out.println(elementPhonePartialText.getAttribute("class"));
         // telephone
 
-        // TODO by name
+        // by name
         //driver.findElement(By.name("value of the attribute with the name -> name"));
 
         driver.quit();
