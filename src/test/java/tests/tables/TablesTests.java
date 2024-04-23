@@ -41,13 +41,16 @@ public class TablesTests {
         // //table[@id='customers']
 
         //return Canada
+        // xpath: //table[@id='customers']//tr[8]//td[3]
+        // css selectors:
         // tr:nth-child(8) td:nth-child(3)
         //tr:nth-child(8) td:last-child -> Canada
 
         WebElement canadaRow = driver.findElement(By.cssSelector("tr:nth-child(8) td:last-child"));
         System.out.println(canadaRow.getText());
 
-        // 4 tr: tr:nth-child(4) td    all td
+        // xpath: //table[@id='customers']//tr[4]//td
+        // css selector: 4 tr: tr:nth-child(4) td    all td
 
         List<WebElement> allColumnsInOneRow = driver.findElements(By.cssSelector("tr:nth-child(4) td"));
 
